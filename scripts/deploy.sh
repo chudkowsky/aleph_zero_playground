@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 source .env && \
-cargo contract instantiate --suri "$SEED" --url "$URL" \
-    --constructor new_token \
-    --args 1000
+cargo contract instantiate --execute --suri "$SEED" --url "$URL" \
+    --constructor new \
+    --args true \
